@@ -326,9 +326,9 @@ public:
         };
 
         chainTxData = ChainTxData{
-            1529196619,
-            1,
-            0
+            1538055985,
+            0,
+            0.00
         };
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,111);
