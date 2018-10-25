@@ -1138,7 +1138,7 @@ CAmount GetDevFee(int nHeight, const CChainParams& chainparams)
     if (halvings >= 64)
         return 0;
 
-CAmount nSubsidy = 86400 * COIN;
+    CAmount nSubsidy = 86400 * COIN;
     // Subsidy is cut in half every 210,000 blocks which will occur approximately every 4 years.
     nSubsidy >>= halvings;
     return nSubsidy;
