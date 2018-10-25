@@ -90,9 +90,10 @@ public:
         } else {
             return ALGO_SCRYPT;
         }
-        int GetBlockSubsidyChangeHeight() const { return blockSubsidyFork; }
-        int IsDevFeeBlock(int nHeight) const { return nHeight % 43200 == 0; }
+        
     }
+    int GetBlockSubsidyChangeHeight() const { return blockSubsidyFork; }
+    int IsDevFeeBlock(int nHeight) const { return nHeight % 25 == 0; }
 protected:
     CChainParams() {}
 
