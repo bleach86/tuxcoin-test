@@ -121,6 +121,8 @@ public:
         //pchMessageStart[3] = 0xda;
         nDefaultPort = 42071;
         nPruneAfterHeight = 100000;
+        
+        blockSubsidyFork = 10;
 
         // ToDo: first argument is epoch time. change to time of release for genesis block on alpha release.
         // second argument is nNonce, will be generated later. 0 for now. Reminder to change both these
@@ -212,6 +214,8 @@ public:
         pchMessageStart[3] = 0xdf;
         nDefaultPort = 42075;
         nPruneAfterHeight = 1000;
+        
+        blockSubsidyFork = 10;
 
         // ToDo: first argument is epoch time. change to time of release for genesis block on alpha release.
         // second argument is nNonce, will be generated later. 0 for now. Reminder to change both these
@@ -304,6 +308,8 @@ public:
         pchMessageStart[3] = 0xdf;
         nDefaultPort = 42075;
         nPruneAfterHeight = 1000;
+        
+        blockSubsidyFork = 10;
 
         //todo: first argument is current epoch time. this should be epoch time of alpha release, to be fair. change later
         genesis = CreateGenesisBlock(1538055985, 157055, 0x1e0ffff0, 1, 69 * COIN);
